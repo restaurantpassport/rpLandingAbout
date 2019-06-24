@@ -186,7 +186,7 @@ a {
   background-color: blanchedalmond;
 }
 main {
-  margin-top: 5rem;
+  margin-top: 4rem;
 }
 .top-nav {
   position: fixed;
@@ -197,7 +197,7 @@ main {
   align-items: center;
   padding: 1rem;
   background-color: #ffd84e;
-  height: 5rem;
+  height: 4rem;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Saira', sans-serif;
 }
