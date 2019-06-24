@@ -161,15 +161,22 @@ a {
 #viewport {
   background-color: blanchedalmond;
 }
-.topnav {
+.top-nav {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  padding: 1rem;
+  background-color: lightblue;
 }
-.topnav {
-  padding-top: 2rem;
-}
-.leftNav a,
-.rightNav a {
+.left-nav a,
+.right-nav a {
   padding: 2rem;
+}
+.left-nav a:hover,
+.right-nav a:hover {
+  text-decoration: underline;
+}
+footer {
+  background-color: lightblue;
+  text-align: center;
 }
