@@ -185,7 +185,6 @@ body {
 }
 .welcome {
   display: flex;
-  justify-content: flex-end;
 }
 .welcome .welcome-text {
   font-size: 7.2rem;
@@ -195,7 +194,9 @@ body {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 40% 0 0;
+  width: 80%;
+  margin: 0 5% 0 10%;
+  margin-left: 10%;
 }
 .step {
   display: flex;
@@ -208,11 +209,15 @@ body {
   justify-content: center;
   flex-flow: column;
   align-items: center;
-  margin: 0 80% 0 0;
 }
 .step .step-text h3 {
-  border: 1rem;
-  border-color: black;
+  margin-left: 0%;
+  margin-top: 1%;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 0.25rem;
+  border-color: brown;
 }
 .step .step-text p {
   font-size: 1rem;
@@ -221,6 +226,10 @@ body {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  width: 80rem;
-  margin: 0 10rem 0 10rem;
+  width: 80%;
+  margin: 0 5% 0 10%;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-color: darkgreen;
 }
