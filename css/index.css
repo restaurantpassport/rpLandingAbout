@@ -107,7 +107,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   color: black;
@@ -199,6 +198,7 @@ main {
   height: 5.8rem;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Saira', sans-serif;
+  z-index: 50;
 }
 .left-nav a,
 .right-nav a {
@@ -230,4 +230,116 @@ footer {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
+}
+.aboutGeneral {
+  width: 100%;
+}
+.aboutGeneral p {
+  text-align: center;
+}
+.teamMembersContainer {
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.teamMembersContainer div {
+  height: 40.5rem;
+  width: 30.5rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+.flip-card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .teamLead {
+  grid-area: teamLead;
+  transform: rotateY(180deg);
+}
+.flip-card:hover .frontend1 {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .frontend2 {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .backend {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .landing {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .about {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .howto {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front img {
+  height: inherit;
+  width: inherit;
+  border-radius: 1.5rem;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.flip-card-back h3 {
+  padding: 2rem 0 1rem 0;
+}
+.flip-card-back p {
+  padding: 0 3rem;
+}
+@media only screen and (max-width: 1100px) {
+  .teamMembersContainer {
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .teamMembersContainer div {
+    height: 40.5rem;
+    width: 30.5rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .teamMembersContainer {
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 1rem;
+  }
+  .teamMembersContainer div {
+    height: 30.5rem;
+    width: 25.5rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+  }
 }
