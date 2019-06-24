@@ -153,6 +153,8 @@ a {
 }
 html {
   font-size: 62.5%;
+}
+body {
   font-family: 'Saira', sans-serif;
 }
 h1 {
@@ -182,7 +184,7 @@ a {
   background-color: blanchedalmond;
 }
 main {
-  margin-top: 4rem;
+  margin-top: 5.8rem;
 }
 .top-nav {
   position: fixed;
@@ -193,20 +195,22 @@ main {
   align-items: center;
   padding: 1rem;
   background-color: #ffd84e;
-  height: 4rem;
+  height: 5.8rem;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Saira', sans-serif;
 }
 .left-nav a,
 .right-nav a {
   padding: 0.5rem 1rem;
+  font-size: 1.7rem;
 }
 .right-nav a {
   background-color: #d2a506;
   border-radius: 4px;
   color: #fff;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   transition: 0.35s;
+  padding: 0.5rem 1.5rem;
 }
 .right-nav a:hover {
   background-color: #b99307;
@@ -217,7 +221,7 @@ main {
 .right-nav .fa-sign-in-alt,
 .right-nav .fa-user-plus {
   color: #fff;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   margin-right: 1rem;
 }
 footer {
@@ -225,4 +229,46 @@ footer {
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
+}
+.teamMembersContainer {
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "  teamLead  frontend1  frontend2  .      " "  backend   landing    about      howto  ";
+  grid-gap: 1rem;
+}
+.teamMembersContainer div {
+  height: 40.5rem;
+  width: 30.5rem;
+  box-shadow: 1rem 2rem 3rem rgba(0, 0, 0, 0.5);
+}
+.teamLead {
+  background-color: red;
+  grid-area: teamLead;
+}
+.frontend1 {
+  background-color: orange;
+  grid-area: frontend1;
+}
+.frontend2 {
+  background-color: yellow;
+  grid-area: frontend2;
+}
+.backend {
+  background-color: green;
+  grid-area: backend;
+}
+.landing {
+  background-color: blue;
+  grid-area: landing;
+}
+.about {
+  background-color: indigo;
+  grid-area: about;
+}
+.howto {
+  background-color: violet;
+  grid-area: howto;
 }

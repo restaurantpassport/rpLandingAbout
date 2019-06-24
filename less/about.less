@@ -1,0 +1,44 @@
+.teamMembersContainer {
+  margin: 0 auto;
+  padding: 1rem 3rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: 
+   "  teamLead  frontend1  frontend2  .      " 
+   "  backend   landing    about      howto  ";
+   grid-gap: 1rem;
+}
+.teamMembersContainer div {
+  height: 40.5rem;
+  width: 30.5rem;
+  box-shadow: 1rem 2rem 3rem rgba(0,0,0,.5);
+}
+.teamLead {
+  background-color: red;
+  grid-area: teamLead;
+}
+.frontend1 {
+  background-color: orange;
+  grid-area: frontend1;
+}
+.frontend2 {
+  background-color:yellow;
+  grid-area: frontend2;
+}
+.backend {
+  background-color:green;
+  grid-area: backend;
+}
+.landing {
+  background-color:blue;
+  grid-area: landing;
+}
+.about {
+  background-color:indigo;
+  grid-area: about;
+}
+.howto {
+  background-color:violet;
+  grid-area: howto;
+}
