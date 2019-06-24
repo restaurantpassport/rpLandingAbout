@@ -180,3 +180,21 @@ footer {
   background-color: lightblue;
   text-align: center;
 }
+body {
+  font-size: 62.5%;
+}
+.welcome {
+  display: flex;
+  margin-top: 7.2rem;
+  justify-content: flex-end;
+}
+.welcome .welcome-text {
+  font-size: 7.2rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 40% 0 0;
+}
