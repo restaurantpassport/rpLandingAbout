@@ -107,7 +107,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   color: black;
@@ -125,9 +124,6 @@ menu,
 nav,
 section {
   display: block;
-}
-body {
-  line-height: 1;
 }
 ol,
 ul {
@@ -155,7 +151,7 @@ a {
   box-sizing: border-box;
   line-height: 1.4;
 }
-body {
+html {
   font-size: 62.5%;
   font-family: 'Saira', sans-serif;
 }
