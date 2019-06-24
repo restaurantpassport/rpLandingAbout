@@ -1,22 +1,56 @@
 @defaultColor: black;
+@nav-bg: #ffd84e;
+@nav-button-bg: #d2a506;
+@nav-button-hover: #b99307;
 
 .top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 1.0rem;
-  background-color: lightblue; 
+  background-color: @nav-bg;
+  height: 5.8rem;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, .2);
+  font-family: 'Saira', sans-serif;
 }
 
 .left-nav a, .right-nav a {
-  padding: 2.0rem;
+  padding: .5rem 1rem;
+  font-size: 1.7rem;
 }
 
-.left-nav a:hover, .right-nav a:hover {
-  text-decoration: underline;
+.right-nav {
+
+  a {
+  background-color: @nav-button-bg;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.7rem;
+  transition: .35s;
+  padding: .5rem 1.5rem;
+  
+    &:hover {
+      background-color: @nav-button-hover;
+    }
+
+    &:not(:first-child) {
+      margin-left: 1rem;
+    }
+  }
+
+  .fa-sign-in-alt, .fa-user-plus {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+  }
 }
 
 footer {
-  background-color: lightblue;
+  background-color: @nav-bg;
   text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
 }

@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Saira Light'), local('Saira-Light'), url(https://fonts.gstatic.com/s/saira/v3/mem9Ya2wxmKQyNGMb4YScr0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Saira Regular'), local('Saira-Regular'), url(https://fonts.gstatic.com/s/saira/v3/memwYa2wxmKQyNknTZY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Saira Bold'), local('Saira-Bold'), url(https://fonts.gstatic.com/s/saira/v3/mem9Ya2wxmKQyNGcaIYScr0.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -105,9 +126,6 @@ nav,
 section {
   display: block;
 }
-body {
-  line-height: 1;
-}
 ol,
 ul {
   list-style: none;
@@ -134,8 +152,11 @@ a {
   box-sizing: border-box;
   line-height: 1.4;
 }
-body {
+html {
   font-size: 62.5%;
+}
+body {
+  font-family: 'Saira', sans-serif;
 }
 h1 {
   font-size: 3.2rem;
@@ -159,24 +180,54 @@ a {
   font-size: 1.3rem;
 }
 #viewport {
+  margin: 0 auto;
+  width: 100%;
   background-color: blanchedalmond;
 }
+main {
+  margin-top: 5.8rem;
+}
 .top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 1rem;
-  background-color: lightblue;
+  background-color: #ffd84e;
+  height: 5.8rem;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Saira', sans-serif;
 }
 .left-nav a,
 .right-nav a {
-  padding: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
 }
-.left-nav a:hover,
+.right-nav a {
+  background-color: #d2a506;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.7rem;
+  transition: 0.35s;
+  padding: 0.5rem 1.5rem;
+}
 .right-nav a:hover {
-  text-decoration: underline;
+  background-color: #b99307;
+}
+.right-nav a:not(:first-child) {
+  margin-left: 1rem;
+}
+.right-nav .fa-sign-in-alt,
+.right-nav .fa-user-plus {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 footer {
-  background-color: lightblue;
+  background-color: #ffd84e;
   text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
 }
