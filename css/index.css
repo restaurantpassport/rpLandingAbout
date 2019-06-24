@@ -199,6 +199,7 @@ main {
   height: 5.8rem;
   box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
   font-family: 'Saira', sans-serif;
+  z-index: 50;
 }
 .left-nav a,
 .right-nav a {
@@ -250,4 +251,38 @@ main .headline {
 main .main-button {
   margin: 0 auto;
   text-align: center;
+}
+main .main-button button {
+  margin-top: 4rem;
+  background-color: transparent;
+  border: 2px solid #d2a506;
+  border-radius: 4px;
+  padding: 1.3rem 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  outline: none;
+  transition: all 0.25s;
+}
+main .main-button button:hover {
+  background-color: #d2a506;
+  cursor: pointer;
+}
+.first-content {
+  padding-top: 2rem;
+}
+.first-content .container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin: 0 auto;
+}
+.first-content .content-box {
+  padding: 1rem;
+  border: 1px solid black;
+}
+.first-content .content-box:not(:last-child) {
+  margin-right: 1rem;
 }
