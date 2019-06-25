@@ -12,9 +12,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  // grid-template-areas: 
-  //  "  teamLead  frontend1  frontend2  .      " 
-  //  "  backend   landing    about      howto  ";
    grid-gap: 1rem;
 }
 .teamMembersContainer div {
@@ -27,8 +24,6 @@
 // flipcard stuff
 .flip-card {
   background-color: transparent;
-  // height: 40.5rem;
-  // width: 30.5rem;
   perspective: 1000px; 
 }
 .flip-card div {
@@ -74,42 +69,9 @@
   color: black;
 }
 .flip-card-back {
-  // background-color: dodgerblue; //adjust color
-  // color: white;
+  background-color: @nav-bg;
   transform: rotateY(180deg);
 }
-// //
-// .teamLead {
-// //   background-color: red;
-//   grid-area: teamLead;
-// }
-// .teamLead .flip-card-back {
-//   grid-area: teamLead;
-// }
-// .frontend1 {
-//   // background-color: orange;
-//   grid-area: frontend1;
-// }
-// .frontend2 {
-//   // background-color:yellow;
-//   grid-area: frontend2;
-// }
-// .backend {
-//   // background-color:green;
-//   grid-area: backend;
-// }
-// .landing {
-//   // background-color:blue;
-//   grid-area: landing;
-// }
-// .about {
-//   // background-color:indigo;
-//   grid-area: about;
-// }
-// .howto {
-//   // background-color:violet;
-//   grid-area: howto;
-// }
 
 .flip-card-back h3 {
   padding: 2rem 0 1rem 0;

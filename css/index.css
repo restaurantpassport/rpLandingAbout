@@ -301,6 +301,7 @@ footer {
   color: black;
 }
 .flip-card-back {
+  background-color: #ffd84e;
   transform: rotateY(180deg);
 }
 .flip-card-back h3 {
