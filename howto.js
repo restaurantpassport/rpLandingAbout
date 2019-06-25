@@ -93,3 +93,9 @@ class Carousel {
   sbtns.forEach(one => new Steps(one))
   
   
+//5 Alert new window view size when resized
+// function reportWindowSize() {
+//   alert('Window view size is now ' + window.innerHeight + 'x' +window.innerWidth)
+// }
+// window.onresize = reportWindowSize;
+// end Alert new window view size when resized
