@@ -2,7 +2,9 @@
 @lambda-times-color-white: #fff;
 @lambda-times-color-black: #000;
 @lambda-times-color-lightgrey: lightgrey;
-@lambda-times-color-background: #f1f1f1;.width-100 {
+@lambda-times-color-background: #f1f1f1;
+
+.width-100 {
     @import url('https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic,900');
 
     width: 100%;
@@ -19,35 +21,39 @@
     flex-direction: @dir;
   }
   
-// .welcome {
-//     margin-bottom: 1rem;
-// }
+.welcome {
+    @media(max-width: 800px){
+        display: none;
+      }
 
-// .welcome .welcome-text {
-//     font-size: 7.2rem;
-//     text-align: center;
-//     letter-spacing: 0.5rem;
-//     display: flex;
-//     justify-content: center;
-//     flex-flow: column;
-//     align-items: center;
-//     width: 80%;
-//     margin: 0 5% 0 10%;
-//     margin-left: 10%;
-// }
+}
+
+.welcome-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    width: 80%;
+    margin: 0 5% 0 10%;
+    margin-left: 10%;
+    margin-bottom: 0px;
+}
 
 .steps {
-    .width-100();
-    .flex(center, center);
-    height: 500px;
-    position: relative;
-    overflow: scroll;
+  .width-100();
+  .flex(center, center);
+  height: 500px;
+  position: relative;
+  overflow: scroll;
 
-    margin-top: 16px;
-    @media(min-width: 1200px){
-      width: 1200px;
-    }
-    .left-button, .right-button {
+  margin-top: 16px;
+  @media(min-width: 1200px){
+    width: 100%;
+  }
+  .left-button, .right-button {
       .flex(center);
       color: @lambda-times-color-white;
       background-color: @lambda-times-color-primary;
@@ -76,9 +82,9 @@
   }
 
 .steps .step-text {
-    font-size: 7.2rem;
+    font-size: 72px;
     text-align: center;
-    letter-spacing: 0.5rem;
+    letter-spacing: 5px;
     display: flex;
     justify-content: center;
     flex-flow: column;
@@ -89,7 +95,7 @@
 .steps .step-text h2 {
     margin-left: 0%;
     margin-top: 5%;
-    border-width: 0.25rem;
+    border-width: 2.5px;
 }
 .steps .step-text h3 {
     margin-left: 0%;
@@ -97,13 +103,13 @@
     border-top-style:  solid;
     border-left-style: solid;
     border-right-style: solid;
-    border-width: 0.25rem;
+    border-width: 2.5px;
     border-color: brown;
 }
 .steps .step-text p {
-    font-size: 1.29rem;
+    font-size: 22px;
     text-align: left;
-    letter-spacing: 0.5rem;
+    letter-spacing: 5px;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -111,8 +117,104 @@
     margin: 0 5% 0 10%;
     margin-left: 10%;
     border-style: solid;
-    border-width: 0.25rem;
+    border-width: 2.5px;
     border-color: darkgreen;
+
+    @media(max-width: 1000px){
+        font-size: 12px;
+      }
+      @media(max-width: 600px){
+        font-size: 10px;
+      }
+  
+}
+
+.step {
+  .width-100();
+  .flex(center, center);
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+
+  margin-top: 16px;
+  @media(min-width: 1200px){
+    width: 100%;
+  }
+  .left-button, .right-button {
+      .flex(center);
+      color: @lambda-times-color-white;
+      background-color: @lambda-times-color-primary;
+      font-size: 40px;
+      border-radius: 50%;
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      cursor: pointer;
+      &:hover {
+        color: @lambda-times-color-primary;
+        background-color: @lambda-times-color-white;
+        border: 2px solid @lambda-times-color-primary;
+      }
+    }
+    .left-button {
+      top: 50%; 
+      left: 25px;
+      transform: translate(0, -50%);
+    }
+    .right-button {
+      top: 50%; 
+      right: 25px;
+      transform: translate(0, -50%);
+    }
+  }
+
+.step .step-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    // margin: 0 20% 0 0;
+}
+
+.step .step-text h2 {
+    margin-left: 0%;
+    margin-top: 5%;
+    border-width: 2.5px;
+}
+.step .step-text h3 {
+    margin-left: 0%;
+    margin-top: 1%;
+    border-top-style:  solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 2.5px;
+    border-color: brown;
+}
+/////////////////////////////////
+.step .step-text p {
+    font-size: 22px;
+    text-align: left;
+    letter-spacing: 5px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0 5% 0 10%;
+    margin-left: 10%;
+    border-style: solid;
+    border-width: 0.25px;
+    border-color: darkgreen;
+
+    @media(max-width: 1000px){
+        font-size: 12px;
+      }
+      @media(max-width: 600px){
+        font-size: 10px;
+      }
+  
 }
 
 .carousel {
@@ -124,7 +226,7 @@
     margin-top: 16px;
     margin-left: 10px;
     @media(min-width: 1200px){
-      width: 1200px;
+      width: 100%;
     }
     .left-button, .right-button {
       .flex(center);
@@ -160,6 +262,49 @@
   body {
     text-align: center;
     color: #f3f3f3;
-    background: #e53838;
+    // background: #e53838;
+    // background: #e53838;
   }
-  
+  .cta {
+    display: flex;
+    margin-top: 72px;
+    margin-left: 68px;
+    justify-content: flex-end;
+}
+
+.cta .cta-text {
+    font-size: 72px;
+    text-align: center;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 82px 0 0;
+}
+
+.cta .cta-text button {
+    border: 1px double black;
+    font-size: 16px;
+    background: white;
+    width: 200px;
+    height: 70px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.cta .cta-text button:hover {
+    background: black;
+    color: white;
+}
+
+nav a {
+  font-size: 16px;
+}
+.header a {
+  font-size: 22px;
+}
+
+h2 {
+  font-size: 32px;
+}
