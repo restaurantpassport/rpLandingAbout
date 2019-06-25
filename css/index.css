@@ -1,3 +1,24 @@
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: local('Saira Light'), local('Saira-Light'), url(https://fonts.gstatic.com/s/saira/v3/mem9Ya2wxmKQyNGMb4YScr0.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Saira Regular'), local('Saira-Regular'), url(https://fonts.gstatic.com/s/saira/v3/memwYa2wxmKQyNknTZY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Saira';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: local('Saira Bold'), local('Saira-Bold'), url(https://fonts.gstatic.com/s/saira/v3/mem9Ya2wxmKQyNGcaIYScr0.ttf) format('truetype');
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -86,7 +107,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   font: inherit;
   vertical-align: baseline;
   color: black;
@@ -104,9 +124,6 @@ menu,
 nav,
 section {
   display: block;
-}
-body {
-  line-height: 1;
 }
 ol,
 ul {
@@ -134,8 +151,11 @@ a {
   box-sizing: border-box;
   line-height: 1.4;
 }
-body {
+html {
   font-size: 62.5%;
+}
+body {
+  font-family: 'Saira', sans-serif;
 }
 h1 {
   font-size: 3.2rem;
@@ -159,26 +179,169 @@ a {
   font-size: 1.3rem;
 }
 #viewport {
+  margin: 0 auto;
+  width: 100%;
   background-color: blanchedalmond;
 }
+main {
+  margin-top: 5.8rem;
+}
 .top-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-content: center;
+  align-items: center;
   padding: 1rem;
-  background-color: lightblue;
+  background-color: #ffd84e;
+  height: 5.8rem;
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.2);
+  font-family: 'Saira', sans-serif;
+  z-index: 50;
 }
 .left-nav a,
 .right-nav a {
-  padding: 2rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
 }
-.left-nav a:hover,
+.right-nav a {
+  background-color: #d2a506;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 1.7rem;
+  transition: 0.35s;
+  padding: 0.5rem 1.5rem;
+}
 .right-nav a:hover {
-  text-decoration: underline;
+  background-color: #b99307;
+}
+.right-nav a:not(:first-child) {
+  margin-left: 1rem;
+}
+.right-nav .fa-sign-in-alt,
+.right-nav .fa-user-plus {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 footer {
-  background-color: lightblue;
+  background-color: #ffd84e;
   text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+.aboutGeneral {
+  width: 100%;
+}
+.aboutGeneral p {
+  text-align: center;
+}
+.teamMembersContainer {
+  margin: 0 auto;
+  padding: 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-gap: 1rem;
+}
+.teamMembersContainer div {
+  height: 40.5rem;
+  width: 30.5rem;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
+  justify-self: center;
+}
+.flip-card {
+  background-color: transparent;
+  perspective: 1000px;
+}
+.flip-card div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .teamLead {
+  grid-area: teamLead;
+  transform: rotateY(180deg);
+}
+.flip-card:hover .frontend1 {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .frontend2 {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .backend {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .landing {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .about {
+  transform: rotateY(180deg);
+}
+.flip-card:hover .howto {
+  transform: rotateY(180deg);
+}
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip-card-front img {
+  height: inherit;
+  width: inherit;
+  border-radius: 1.5rem;
+}
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+.flip-card-back h3 {
+  padding: 2rem 0 1rem 0;
+}
+.flip-card-back p {
+  padding: 0 3rem;
+}
+@media only screen and (max-width: 1100px) {
+  .teamMembersContainer {
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+  }
+  .teamMembersContainer div {
+    height: 40.5rem;
+    width: 30.5rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .teamMembersContainer {
+    margin: 0 auto;
+    padding: 1rem 3rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    grid-gap: 1rem;
+  }
+  .teamMembersContainer div {
+    height: 30.5rem;
+    width: 25.5rem;
+    box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+  }
 }
 .width-100 {
   width: 100%;
