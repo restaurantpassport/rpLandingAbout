@@ -10,4 +10,4 @@ cards.forEach((card) => {
   card.addEventListener('mouseover', () => {
     card.title = "click to make this card vanish";
   })
-})
+});
