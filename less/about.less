@@ -2,7 +2,7 @@
   width: 100%;
 }
 
-.aboutGeneral h4 {
+.aboutGeneral h3 {
   text-align: center;
   padding: 4rem 4rem;
 }
@@ -12,7 +12,7 @@
   padding: 1rem 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
    grid-gap: 1rem;
 }
 .teamMembersContainer div {
@@ -73,6 +73,11 @@
 .flip-card-back {
   background-color: @nav-bg;
   transform: rotateY(180deg);
+}
+.flip-card-back em {
+  font-style: italic;
+  font-size: 1.55rem;
+  padding-right: .7rem;
 }
 
 .flip-card-back h3 {

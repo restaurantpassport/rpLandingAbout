@@ -231,13 +231,6 @@ footer {
   margin-top: 2rem;
   padding: 1rem;
 }
-main {
-  width: 100%;
-  background-color: red;
-  padding: 2rem;
-  height: 94vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.2)), url('../images/main-img.jpg') fixed center;
-}
 main .headline {
   font-size: 10rem;
   font-weight: 300;
@@ -288,7 +281,7 @@ main .main-button button:hover {
 .aboutGeneral {
   width: 100%;
 }
-.aboutGeneral h4 {
+.aboutGeneral h3 {
   text-align: center;
   padding: 4rem 4rem;
 }
@@ -297,7 +290,7 @@ main .main-button button:hover {
   padding: 1rem 5rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-gap: 1rem;
 }
 .teamMembersContainer div {
@@ -357,6 +350,11 @@ main .main-button button:hover {
 .flip-card-back {
   background-color: #ffd84e;
   transform: rotateY(180deg);
+}
+.flip-card-back em {
+  font-style: italic;
+  font-size: 1.55rem;
+  padding-right: 0.7rem;
 }
 .flip-card-back h3 {
   padding: 2rem 0 1rem 0;
