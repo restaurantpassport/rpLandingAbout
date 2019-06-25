@@ -260,7 +260,6 @@ footer {
   font-size: 3.2rem;
   color: #fff;
   text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
-  font-style: italic;
   letter-spacing: 0.2rem;
 }
 @media (max-width: 800px) {
