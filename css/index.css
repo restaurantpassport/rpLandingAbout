@@ -210,6 +210,11 @@ footer {
 .border-bottom-grey {
   border-bottom: 1px solid lightgrey;
 }
+@media (max-width: 800px) {
+  .welcome {
+    display: none;
+  }
+}
 .steps {
   width: 100%;
   display: flex;
@@ -247,7 +252,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .steps {
-    width: 1200px;
+    width: 100%;
   }
 }
 .steps .left-button,
@@ -318,6 +323,16 @@ footer {
   border-width: 0.25rem;
   border-color: darkgreen;
 }
+@media (max-width: 1000px) {
+  .steps .step-text p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 600px) {
+  .steps .step-text p {
+    font-size: 1rem;
+  }
+}
 .carousel {
   width: 100%;
   display: flex;
@@ -356,7 +371,7 @@ footer {
 }
 @media (min-width: 1200px) {
   .carousel {
-    width: 1200px;
+    width: 100%;
   }
 }
 .carousel .left-button,
@@ -421,5 +436,4 @@ footer {
 body {
   text-align: center;
   color: #f3f3f3;
-  background: #e53838;
 }
