@@ -46,7 +46,8 @@ class Carousel {
   for ( i = 0; i < (imgs.length - 1); i++)
    { imgs[i].style = 'display: none'}
 
-  imgs[0].style='display: flex';
+    if (imgs.length > 0) 
+    {imgs[0].style = 'display: flex'}
 
   class Steps {
     constructor(element){
