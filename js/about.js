@@ -18,3 +18,20 @@ cards.forEach((card) => {
     card.firstElementChild.style.transform = "rotateY(0deg)";
   })
 });
+
+cards.forEach((card) => {
+  card.addEventListener('click', (e) => {
+    cards.style.opacity = "0.5";
+    e.target.style.opacity = "1";
+  })
+});
+
+// const teamMembersContainer = document.querySelector('.teamMembersContainer');
+cards.forEach((card) => {
+  const flipInner = card.firstElementChild;
+  flipInner.className = "flip-inner";
+  const flipcardFront = flipInner.firstElementChild;
+  flipcardFront.className = "flip-card-front";
+  flipcardBack = flipInner.children[1];
+  flipcardBack.className = "flip-card-back";
+});
