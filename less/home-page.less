@@ -1,8 +1,16 @@
-main {
+@tablet: (max-width: 800px);
+@phone: (max-width: 500px);
+
+.headings-shadow() {
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, .9);
+}
+
+.hero {
   width: 100%;
   background-color: red;
   padding: 2rem;
-  height: 94vh;
+  min-height: 94vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, .65), rgba(0, 0, 0, .2)), url('../images/main-img.jpg') fixed center;
 
   .headline {
@@ -11,8 +19,30 @@ main {
     padding-top: 18rem;
     margin: 0 auto;
     text-align: center;
-    color: #fff;
-    text-shadow: 0 2px 6px rgba(0, 0, 0, .9);
+    .headings-shadow();
+
+    @media @tablet {
+      font-size: 7rem;
+    }
+
+    @media @phone {
+      font-size: 4.5rem;
+    }
+    
+  }
+
+  .subhead {
+    font-size: 3.2rem;
+    .headings-shadow();
+    letter-spacing: .2rem;
+
+    @media @tablet {
+      font-size: 2.5rem;
+    }
+
+    @media @phone {
+      font-size: 2rem;
+    }
   }
 
   .main-button {
@@ -20,7 +50,7 @@ main {
     text-align: center;
 
     button {
-      margin-top: 4rem;
+      margin-top: 8rem;
       background-color: transparent;
       border: 2px solid @nav-button-bg;
       border-radius: 4px;
@@ -32,6 +62,11 @@ main {
       text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
       outline: none;
       transition: all .25s;
+
+      @media @phone {
+        font-size: 1.6rem;
+        padding: 1rem 1.5rem;
+      }
 
       &:hover {
         background-color: @nav-button-bg;
@@ -48,13 +83,24 @@ main {
   .container {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
+
+    @media @tablet {
+      flex-direction: column;
+    }
   }
 
   .content-box {
+    width: 50%;
     padding: 1rem;
     border: 1px solid black;
+    text-align: left;
+
+    @media @tablet {
+      width: 100%;
+      margin-top: 1.5rem;
+    }
     
     &:not(:last-child) {
       margin-right: 1rem;
