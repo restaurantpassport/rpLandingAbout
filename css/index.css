@@ -228,10 +228,108 @@ main {
 footer {
   background-color: #ffd84e;
   text-align: center;
-  margin-top: 2rem;
   padding: 1rem;
 }
-
+.hero {
+  width: 100%;
+  background-color: red;
+  padding: 2rem;
+  min-height: 94vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.2)), url('../images/main-img.jpg') fixed center;
+}
+.hero .headline {
+  font-size: 10rem;
+  font-weight: 300;
+  padding-top: 18rem;
+  margin: 0 auto;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+}
+@media (max-width: 800px) {
+  .hero .headline {
+    font-size: 7rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero .headline {
+    font-size: 4.5rem;
+  }
+}
+.hero .subhead {
+  font-size: 3.2rem;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.9);
+  font-style: italic;
+  letter-spacing: 0.2rem;
+}
+@media (max-width: 800px) {
+  .hero .subhead {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 500px) {
+  .hero .subhead {
+    font-size: 2rem;
+  }
+}
+.hero .main-button {
+  margin: 0 auto;
+  text-align: center;
+}
+.hero .main-button button {
+  margin-top: 8rem;
+  background-color: transparent;
+  border: 2px solid #d2a506;
+  border-radius: 4px;
+  padding: 1.3rem 3rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.9rem;
+  letter-spacing: 0.4rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.8);
+  outline: none;
+  transition: all 0.25s;
+}
+@media (max-width: 500px) {
+  .hero .main-button button {
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+  }
+}
+.hero .main-button button:hover {
+  background-color: #d2a506;
+  cursor: pointer;
+}
+.first-content {
+  padding-top: 2rem;
+}
+.first-content .container {
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+}
+@media (max-width: 800px) {
+  .first-content .container {
+    flex-direction: column;
+  }
+}
+.first-content .content-box {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid black;
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .first-content .content-box {
+    width: 100%;
+    margin-top: 1.5rem;
+  }
+}
+.first-content .content-box:not(:last-child) {
+  margin-right: 1rem;
+}
 .aboutGeneral {
   width: 100%;
 }
