@@ -215,6 +215,19 @@ footer {
     display: none;
   }
 }
+.welcome-text {
+  font-size: 7.2rem;
+  text-align: center;
+  letter-spacing: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  width: 80%;
+  margin: 0 5% 0 10%;
+  margin-left: 10%;
+  margin-bottom: 0px;
+}
 .steps {
   width: 100%;
   display: flex;
