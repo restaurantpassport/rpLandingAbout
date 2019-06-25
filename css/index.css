@@ -216,9 +216,9 @@ footer {
   }
 }
 .welcome-text {
-  font-size: 7.2rem;
+  font-size: 72px;
   text-align: center;
-  letter-spacing: 0.5rem;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -300,9 +300,9 @@ footer {
   transform: translate(0, -50%);
 }
 .steps .step-text {
-  font-size: 7.2rem;
+  font-size: 72px;
   text-align: center;
-  letter-spacing: 0.5rem;
+  letter-spacing: 5px;
   display: flex;
   justify-content: center;
   flex-flow: column;
@@ -311,7 +311,7 @@ footer {
 .steps .step-text h2 {
   margin-left: 0%;
   margin-top: 5%;
-  border-width: 0.25rem;
+  border-width: 2.5px;
 }
 .steps .step-text h3 {
   margin-left: 0%;
@@ -319,13 +319,13 @@ footer {
   border-top-style: solid;
   border-left-style: solid;
   border-right-style: solid;
-  border-width: 0.25rem;
+  border-width: 2.5px;
   border-color: brown;
 }
 .steps .step-text p {
-  font-size: 1.29rem;
+  font-size: 22px;
   text-align: left;
-  letter-spacing: 0.5rem;
+  letter-spacing: 5px;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -333,17 +333,135 @@ footer {
   margin: 0 5% 0 10%;
   margin-left: 10%;
   border-style: solid;
-  border-width: 0.25rem;
+  border-width: 2.5px;
   border-color: darkgreen;
 }
 @media (max-width: 1000px) {
   .steps .step-text p {
-    font-size: 1.2rem;
+    font-size: 12px;
   }
 }
 @media (max-width: 600px) {
   .steps .step-text p {
-    font-size: 1rem;
+    font-size: 10px;
+  }
+}
+.step {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  position: relative;
+  overflow: scroll;
+  margin-top: 16px;
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('PT Sans Italic'), local('PTSans-Italic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizYRExUiTo99u79D0e0x8mN.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('PT Sans Bold Italic'), local('PTSans-BoldItalic'), url(https://fonts.gstatic.com/s/ptsans/v10/jizdRExUiTo99u79D0e8fOydLxUY.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'), url(https://fonts.gstatic.com/s/ptsans/v10/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+@media (min-width: 1200px) {
+  .step {
+    width: 100%;
+  }
+}
+.step .left-button,
+.step .right-button {
+  display: flex;
+  justify-content: center;
+  align-items: none;
+  flex-direction: row;
+  color: #fff;
+  background-color: #333;
+  font-size: 40px;
+  border-radius: 50%;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+}
+.step .left-button:hover,
+.step .right-button:hover {
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.step .left-button {
+  top: 50%;
+  left: 25px;
+  transform: translate(0, -50%);
+}
+.step .right-button {
+  top: 50%;
+  right: 25px;
+  transform: translate(0, -50%);
+}
+.step .step-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+.step .step-text h2 {
+  margin-left: 0%;
+  margin-top: 5%;
+  border-width: 2.5px;
+}
+.step .step-text h3 {
+  margin-left: 0%;
+  margin-top: 1%;
+  border-top-style: solid;
+  border-left-style: solid;
+  border-right-style: solid;
+  border-width: 2.5px;
+  border-color: brown;
+}
+.step .step-text p {
+  font-size: 22px;
+  text-align: left;
+  letter-spacing: 5px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin: 0 5% 0 10%;
+  margin-left: 10%;
+  border-style: solid;
+  border-width: 0.25px;
+  border-color: darkgreen;
+}
+@media (max-width: 1000px) {
+  .step .step-text p {
+    font-size: 12px;
+  }
+}
+@media (max-width: 600px) {
+  .step .step-text p {
+    font-size: 0.1px;
   }
 }
 .carousel {
@@ -449,4 +567,33 @@ footer {
 body {
   text-align: center;
   color: #f3f3f3;
+}
+.cta {
+  display: flex;
+  margin-top: 72px;
+  margin-left: 68px;
+  justify-content: flex-end;
+}
+.cta .cta-text {
+  font-size: 72px;
+  text-align: center;
+  letter-spacing: 5px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+  margin: 0 82px 0 0;
+}
+.cta .cta-text button {
+  border: 1px double black;
+  font-size: 16px;
+  background: white;
+  width: 200px;
+  height: 70px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.cta .cta-text button:hover {
+  background: black;
+  color: white;
 }
