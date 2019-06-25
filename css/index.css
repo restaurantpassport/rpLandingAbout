@@ -227,16 +227,17 @@ main {
 }
 footer {
   background-color: #ffd84e;
+
   text-align: center;
   margin-top: 2rem;
   padding: 1rem;
 }
-
 .aboutGeneral {
   width: 100%;
 }
-.aboutGeneral p {
+.aboutGeneral h4 {
   text-align: center;
+  padding: 4rem 4rem;
 }
 .teamMembersContainer {
   margin: 0 auto;
@@ -262,6 +263,7 @@ footer {
   width: 100%;
   height: 100%;
   text-align: center;
+
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -269,6 +271,7 @@ footer {
   grid-area: teamLead;
   transform: rotateY(180deg);
 }
+
 .flip-card:hover .frontend1 {
   transform: rotateY(180deg);
 }
