@@ -4,14 +4,12 @@ class NavBar {
     this.mobileBtn = element.querySelector('.nav-mobile-btn');
     this.mobileMenu = element.querySelector('#mobile-nav-menu');
   
-    this.mobileBtn.addEventListener('click', () => {
-      this.openMobileNav();
-    });
-    this.mobileBtn.addEventListener('touchstart', () => {
-      this.openMobileNav();
+    this.mobileBtn.addEventListener('click', (e) => {
+      this.openMobileNav(e);
     });
   }
   openMobileNav(e) {
+    e.preventDefault();
     this.mobileMenu.classList.toggle('open');
   }
 }
