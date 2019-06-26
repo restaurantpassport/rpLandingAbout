@@ -3,6 +3,9 @@ class Cardtrick {
     this.flipcard = flipcard;
 
     this.flipFirstChild = flipcard.firstElementChild;
+    this.flipcard.addEventListener('touchstart', () => {
+      this.touchRotate();
+    });
     this.flipFirstChild.addEventListener('mouseover', () => {
       this.rotateover();
     });
@@ -15,9 +18,19 @@ class Cardtrick {
     this.flipcard.addEventListener('mouseover', () => {
       this.titleText();
     });
+    this.status = false;
 
   }
-
+  touchRotate() {
+    if (this.status === false) {
+      this.flipFirstChild.style.transform = "rotateY(180deg)";
+      return this.status = true;
+    }
+    else {
+      this.flipFirstChild.style.transform = "rotateY(0deg)";
+      return this.status = false;
+    }
+  }
   rotateover() {
     this.flipFirstChild.style.transform = "rotateY(180deg)";
   }
