@@ -38,16 +38,6 @@ class Carousel {
 
     }
 }
-  let btns = document.querySelectorAll('.xbtn');
-  let imgs = document.querySelectorAll('.carousel img');
-
-  btns.forEach(one => new Carousel(one))
-
-  for ( i = 0; i < (imgs.length - 1); i++)
-   { imgs[i].style = 'display: none'}
-
-    if (imgs.length > 0) 
-    {imgs[0].style = 'display: flex'}
 
   class Steps {
     constructor(element){
@@ -87,15 +77,27 @@ class Carousel {
 
     }
 }
+
+
+let btns = document.querySelectorAll('.xbtn');
+let imgs = document.querySelectorAll('.carousel img');
+Array.from(btns).forEach(one => new Carousel(one))
+
+for ( i = 0; i < (imgs.length - 1); i++)
+ { imgs[i].style = 'display: none'}
+
+  if (imgs.length > 0) 
+  {imgs[0].style = 'display: flex'}
+
+  imgs = document.querySelectorAll('.carousel img');
+  
+  for ( i = 0; i < (imgs.length - 1); i++)
+   { imgs[i].style = 'display: none'}
+  
+    if (imgs.length > 0) 
+    {imgs[0].style = 'display: flex'}
+ 
   let sbtns = document.querySelectorAll('.sbtn');
   let spans = document.querySelectorAll('.steps span');
 
   sbtns.forEach(one => new Steps(one))
-  
-  
-//5 Alert new window view size when resized
-// function reportWindowSize() {
-//   alert('Window view size is now ' + window.innerHeight + 'x' +window.innerWidth)
-// }
-// window.onresize = reportWindowSize;
-// end Alert new window view size when resized

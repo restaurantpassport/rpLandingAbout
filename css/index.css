@@ -230,6 +230,8 @@ footer {
 }
 .welcome-text h2 {
   font-size: 32px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 @media (max-width: 600px) {
   .welcome-text h2 {
@@ -348,6 +350,8 @@ footer {
   margin-left: 0%;
   margin-top: 5%;
   border-width: 2.5px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 .steps .step-text h3 {
   margin-left: 0%;
@@ -357,6 +361,8 @@ footer {
   border-right-style: solid;
   border-width: 2.5px;
   border-color: brown;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 .steps .step-text p {
   font-size: 22px;
@@ -489,6 +495,8 @@ footer {
   margin-left: 0%;
   margin-top: 5%;
   border-width: 2.5px;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 .step .step-text h3 {
   margin-left: 0%;
@@ -498,6 +506,8 @@ footer {
   border-right-style: solid;
   border-width: 2.5px;
   border-color: brown;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
 }
 @media (max-width: 600px) {
   .step .step-text h3 {
@@ -666,7 +676,4 @@ footer {
 }
 .headerall a {
   font-size: 16px;
-}
-.body {
-  background-image: url "images/pexels-photo-1383776.jpeg";
 }
