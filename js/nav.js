@@ -3,11 +3,12 @@ class NavBar {
     this.element = element;
     this.mobileBtn = element.querySelector('.nav-mobile-btn');
     this.mobileMenu = element.querySelector('#mobile-nav-menu');
-  
+
     this.mobileBtn.addEventListener('click', () => {
       this.openMobileNav();
     });
-    this.mobileBtn.addEventListener('touchstart', () => {
+    this.mobileBtn.addEventListener('touchstart', (e) => {
+      e.preventDefault();
       this.openMobileNav();
     });
   }
