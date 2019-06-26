@@ -27,25 +27,79 @@
   font-size: 1.7rem;
 }
 
-.left-nav a {
+.left-nav .nav-links {
 
   @media @tablet {
     display: none;
   }
 }
 
+.left-nav {
+  position: relative;
+
+  .mobile-nav-menu {
+    position: absolute;
+    width: 16rem;
+    background-color: @nav-bg;
+    top: 5.6rem;
+    left: -2rem;
+    font-size: 2rem;
+    z-index: -5;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    text-align: center;
+    transform: translateX(-15rem);
+
+    a, a:active, a:visited {
+      font-size: 2rem;
+      color: black;
+      display: block;
+      padding: 2rem 1rem;
+    }
+
+    // &.close {
+    //   visibility: hidden;
+    //   opacity: none;
+    //   transition: .4s ease-out;
+    // }
+  }
+
+  ul {
+
+    li {
+      border-bottom: 1px solid black;
+
+      &:first-child {
+        border-top: 1px solid black;
+    }
+  }
+}
+
+  // class for mobile menu opening
+  .open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .nav-mobile-btn {
+    display: none;
+  
+    @media @tablet {
+      font-size: 3.5rem;
+      display: block;
+      cursor: pointer;
+    }
+  }
+
+}
+
 .on-home {
   display: none;
 }
 
-.nav-mobile-btn {
-  display: none;
 
-  @media @tablet {
-    font-size: 3.5rem;
-    display: block;
-  }
-}
 
 .site-name a, .site-name a:active, .site-name a:visited {
   font-size: 3.2rem;

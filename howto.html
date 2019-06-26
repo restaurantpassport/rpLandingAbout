@@ -6,26 +6,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="icon" href="./favicon.ico"> -->
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a7979850f0.js"></script>
+  <script src="./js/howto.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
 </head>
 
 <body>
     <div id="viewport">
-      <header class='header'>
+      <header>
         <nav class="top-nav">
           <div class="left-nav">
-            <a href="./about.html">About</a>
-            <a href="./howto.html">How.To</a>
+            <div id="mobile-nav-menu" class="mobile-nav-menu">
+              <div>
+                <ul>
+                  <li><a href="index.html" alt="home page link">Home</a></li>
+                  <li><a href="about.html" alt="about page link">About</a></li>
+                  <li><a href="howto.html" alt="how to use the website link">How-To</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-mobile-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <a href="./about.html" class="nav-links" alt="about page link">About</a>
+            <a href="./howto.html" class="nav-links" alt="how to use the website link">How-To</a>
           </div>
+          <div class="site-name"><a href="index.html" alt="home page link">Restaurant Passport</a></div>
           <div class="right-nav">
-            <a href="./index.html">Login</a>
-            <a href="#">Sign.Up</a>
+            <a href="https://restaurant-passport-fe.netlify.com/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+            <a href="https://restaurant-passport-fe.netlify.com/register"><i class="fas fa-user-plus"></i>Sign Up</a>
           </div>
         </nav>
       </header>
-      <main>
+        <main>
 
   <!-- CAROUSEL COMPONENT -->
   <div class="carousel">
@@ -89,22 +103,10 @@
                     <div class="right-button sbtn" data-btn="R">></div>
                   </section>
                 </main>
-  <footer class='header'>
-    <nav class="top-nav">
-      <div class="left-nav">
-        <a href="./about.html">About</a>
-        <a href="./howto.html">How.To</a>
-      </div>
-      <div class="right-nav">
-        <a href="./index.html">Login</a>
-        <a href="#">Sign.Up</a>
-      </div>
-    </nav>
-  
-    <p>copyright 2019</p>
-  </footer>
-</div>
-<script src="./howto.js"></script>
+                <footer>
+                  <p>Restaurant Passport &copy; 2019</p>
+                </footer>
+            </div>
 </body>
 
 </html>
