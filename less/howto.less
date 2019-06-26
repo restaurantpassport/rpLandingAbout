@@ -8,6 +8,7 @@
 @medium: ~"(max-width: 1000px)";
 @tablet: ~"(max-width: 800px)";
 @phone: ~"(max-width: 600px)";
+@tiny: ~"(max-width: 320px)";
 
 .steptexth3() {
   margin-left: 0%;
@@ -140,9 +141,15 @@
 
 .welcome-text h2 {
   font-size: 32px;
+  @media @phone{
+    font-size: 16px;
+  }
 }
 
-.steps {.stepboth(500px, scroll, 0);}
+.steps {.stepboth(500px, scroll, 0);
+  @media @tiny{
+    height: 800px;} 
+}
 .steps .step-text {.steptext();}
 .steps .step-text h2 {.steptexth2();}
 .steps .step-text h3 {.steptexth3();}
@@ -151,8 +158,18 @@
 .step {.stepboth(500px, scroll, 0);}
 .step .step-text {.steptext();}
 .step .step-text h2 {.steptexth2();}
-.step .step-text h3 {.steptexth3();}
-.step .step-text p {.steptextp();}
+.step .step-text h3 {.steptexth3();
+  @media @phone{
+     font-size: 16px;
+   }
+   @media @tiny{
+    display: none;}
+ 
+ }
+.step .step-text p {.steptextp();
+  @media @phone{
+font-size: 8px;}
+}
 
 .carousel {.stepboth(500px, hidden, 0);}
 

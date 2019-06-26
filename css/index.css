@@ -231,6 +231,11 @@ footer {
 .welcome-text h2 {
   font-size: 32px;
 }
+@media (max-width: 600px) {
+  .welcome-text h2 {
+    font-size: 16px;
+  }
+}
 .steps {
   width: 100%;
   display: flex;
@@ -324,6 +329,11 @@ footer {
   font-style: normal;
   font-weight: 700;
   src: local('PT Sans Bold'), local('PTSans-Bold'), url(https://fonts.gstatic.com/s/ptsans/v10/jizfRExUiTo99u79B_mh0O6tKA.ttf) format('truetype');
+}
+@media (max-width: 320px) {
+  .steps {
+    height: 800px;
+  }
 }
 .steps .step-text {
   font-size: 72px;
@@ -489,6 +499,16 @@ footer {
   border-width: 2.5px;
   border-color: brown;
 }
+@media (max-width: 600px) {
+  .step .step-text h3 {
+    font-size: 16px;
+  }
+}
+@media (max-width: 320px) {
+  .step .step-text h3 {
+    display: none;
+  }
+}
 .step .step-text p {
   font-size: 22px;
   text-align: left;
@@ -511,6 +531,11 @@ footer {
 @media (max-width: 600px) {
   .step .step-text p {
     font-size: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .step .step-text p {
+    font-size: 8px;
   }
 }
 .carousel {
