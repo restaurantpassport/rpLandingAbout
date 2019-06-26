@@ -12,7 +12,7 @@
 
 .steptexth3() {
   margin-left: 0%;
-  margin-top: 0%;
+  margin-top: 1%;
   border-top-style:  solid;
   border-left-style: solid;
   border-right-style: solid;
@@ -83,11 +83,6 @@
       width: 50px;
       height: 50px;
       cursor: pointer;
-      // &:hover {
-      //   color: @lambda-times-color-primary;
-      //   background-color: @lambda-times-color-white;
-      //   border: 2px solid @lambda-times-color-primary;
-      // }
     }
     .left-button {
       top: 50%; 
@@ -125,9 +120,8 @@
 .welcome {
     @media @tablet{
         display: none;
-      }
-
-}
+                  }
+          }
 
 .welcome-text {
     font-size: 72px;
@@ -156,7 +150,8 @@
 .steps {.stepboth(500px, scroll, 0);
   @media @tiny{
     height: 800px;} 
-}
+  
+  }
 .steps .step-text {.steptext();}
 .steps .step-text h2 {.steptexth2();}
 .steps .step-text h3 {.steptexth3();}
@@ -201,17 +196,11 @@ font-size: 8px;}
     border: 1px double black;
     font-size: 16px;
     background: white;
-    width: 200px;
+    width: 150px;
     height: 70px;
     margin-top: 10px;
     cursor: pointer;
-    @media @phone{
-      font-size: 10px;
-      height: 80px;
-      width: 150px;
-    }
-
-  }
+}
 
 .cta .cta-text button:hover {
     background: black;
