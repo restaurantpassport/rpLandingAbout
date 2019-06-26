@@ -6,27 +6,38 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://kit.fontawesome.com/a7979850f0.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./CSS/index.css" />
-  <script src="./howto.js" async></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 </head>
 
 <body style='background-image: url("images/pexels-photo-1342641-min.jpeg"); background-color: red;'>
   <div id="viewport">
-      <header class='headerall'>
-        <nav class="top-nav">
-          <div class="left-nav">
-            <a href="#">About</a>
-            <a href="./howto.html">How.To</a>
+    <header>
+      <nav class="top-nav">
+        <div class="left-nav">
+          <div id="mobile-nav-menu" class="mobile-nav-menu">
+            <div>
+              <ul>
+                <li><a href="index.html" alt="home page link">Home</a></li>
+                <li><a href="about.html" alt="about page link">About</a></li>
+                <li><a href="howto.html" alt="how to use the website link">How-To</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="right-nav">
-            <a href="#">Login</a>
-            <a href="#">Sign.Up</a>
+          <div class="nav-mobile-btn">
+            <i class="fas fa-bars"></i>
           </div>
-        </nav>
-      </header>
+          <a href="./about.html" class="nav-links" alt="about page link">About</a>
+          <a href="./howto.html" class="nav-links" alt="how to use the website link">How-To</a>
+        </div>
+        <div class="site-name"><a href="index.html" alt="home page link">Restaurant Passport</a></div>
+        <div class="right-nav">
+          <a href="https://restaurant-passport-fe.netlify.com/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+          <a href="https://restaurant-passport-fe.netlify.com/register"><i class="fas fa-user-plus"></i>Sign Up</a>
+        </div>
+      </nav>
+    </header>
       <main>
 
         <section style='display: flex; background-image: url("images/pexels-photo-1458680-min.jpeg"); background-repeat: repeat;'>
@@ -75,21 +86,10 @@
                 </section>
       </main>
   
-  <footer class='headerall'>
-    <nav class="top-nav">
-      <div class="left-nav">
-        <a href="#">About</a>
-        <a href="./howto.html">How.To</a>
-      </div>
-      <div class="right-nav">
-        <a href="#">Login</a>
-        <a href="#">Sign.Up</a>
-      </div>
-    </nav>
-  
-    <p>copyright 2019</p>
-  </footer>
-</div>
+      <footer>
+        <p>Restaurant Passport &copy; 2019</p>
+      </footer>
+  </div>
 
 </body>
 
