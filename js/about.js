@@ -3,14 +3,8 @@ class Cardtrick {
     this.flipcard = flipcard;
 
     this.flipFirstChild = flipcard.firstElementChild;
-    this.flipcard.addEventListener('touchstart', () => {
+    this.flipcard.addEventListener('click', () => {
       this.touchRotate();
-    });
-    this.flipFirstChild.addEventListener('mouseover', () => {
-      this.rotateover();
-    });
-    this.flipFirstChild.addEventListener('mouseout', () => {
-      this.rotateback();
     });
     this.flipcard.addEventListener('dblclick', () => {
       this.vanishCard();
@@ -30,12 +24,6 @@ class Cardtrick {
       this.flipFirstChild.style.transform = "rotateY(0deg)";
       return this.status = false;
     }
-  }
-  rotateover() {
-    this.flipFirstChild.style.transform = "rotateY(180deg)";
-  }
-  rotateback() {
-    this.flipFirstChild.style.transform = "rotateY(0deg)";
   }
   vanishCard() {
     this.flipcard.style.display = "none";
