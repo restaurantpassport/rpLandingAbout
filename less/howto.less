@@ -31,8 +31,8 @@
   letter-spacing: 1px;
   // margin-bottom: 15px;
 }
-.steptextp() {
-  font-size: 22px;
+.steptextp(@p: 22px) {
+  font-size: @p;
   text-align: left;
   letter-spacing: 5px;
   display: flex;
@@ -173,9 +173,8 @@
    }
    @media @tiny{
     display: none;}
- 
  }
-.step .step-text p {.steptextp();
+.step .step-text p {.steptextp(16px);
   @media @phone{
 font-size: 8px;}
 }
