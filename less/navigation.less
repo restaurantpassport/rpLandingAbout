@@ -40,25 +40,41 @@
   .mobile-nav-menu {
     position: absolute;
     width: 16rem;
-    // padding: 2rem;
     background-color: @nav-bg;
     top: 5.6rem;
     left: -2rem;
     font-size: 2rem;
     z-index: -5;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s ease-out;
+    transform: translateX(-15rem);
+
+    // &.close {
+    //   visibility: hidden;
+    //   opacity: none;
+    //   transition: .4s ease-out;
+    // }
   }
 
   ul {
 
     li {
       border-bottom: 1px solid black;
-      padding: 1rem;
+      padding: 2rem 1rem;
 
       &:first-child {
         border-top: 1px solid black;
     }
   }
 }
+
+  // class for mobile menu opening
+  .open {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
 
   .nav-mobile-btn {
     display: none;
