@@ -6,6 +6,15 @@
   text-align: center;
   padding: 4rem 4rem;
 }
+.toggleMagic {
+  background-color: @nav-button-bg;
+  padding: .3rem;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  display: none;
+  // display: inline-block;
+  // text-align: center;
+}
 
 .teamMembersContainer {
   margin: 0 auto 5rem auto;
@@ -37,9 +46,7 @@
     transform-style: preserve-3d;
   }
 }
-.flip-card:hover .flip-card--role {
-  transform: rotateY(180deg);
-}
+
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
