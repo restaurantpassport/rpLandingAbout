@@ -23,12 +23,21 @@
 }
 
 .left-nav a, .right-nav a {
-  padding: .5rem 1rem;
+  padding: 0;
   font-size: 1.7rem;
 }
 
 .left-nav .nav-links {
+  border-bottom: 2px solid transparent; 
+  transition: .23s;
 
+  &:not(:last-child) {
+    margin-right: 2.5rem;
+  }
+
+  &:hover {
+    border-bottom: 2px solid black;
+  }
   @media @tablet {
     display: none;
   }
