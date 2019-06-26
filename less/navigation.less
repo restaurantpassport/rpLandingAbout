@@ -27,7 +27,7 @@
   font-size: 1.7rem;
 }
 
-.left-nav a {
+.left-nav .nav-links {
 
   @media @tablet {
     display: none;
@@ -50,6 +50,13 @@
     transition: all .3s ease-out;
     transform: translateX(-15rem);
 
+    a, a:active, a:visited {
+      font-size: 2rem;
+      color: black;
+      display: block;
+      padding: 2rem 1rem;
+    }
+
     // &.close {
     //   visibility: hidden;
     //   opacity: none;
@@ -61,7 +68,6 @@
 
     li {
       border-bottom: 1px solid black;
-      padding: 2rem 1rem;
 
       &:first-child {
         border-top: 1px solid black;
