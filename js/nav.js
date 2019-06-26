@@ -19,4 +19,3 @@ class NavBar {
 const topNav = document.querySelectorAll('.top-nav');
 
 topNav.forEach(navbar => new NavBar(navbar));
-

@@ -6,29 +6,40 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="icon" href="./favicon.ico"> -->
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a7979850f0.js"></script>
+  <script src="./js/howto.js" defer></script>
+  <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/index.css" />
-  <script src="./howto.js" async></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div id="viewport">
-      <header class='header'>
+      <header>
         <nav class="top-nav">
           <div class="left-nav">
-            <a href="#">About</a>
-            <a href="./howto.html">How.To</a>
+            <div id="mobile-nav-menu" class="mobile-nav-menu">
+              <div>
+                <ul>
+                  <li><a href="index.html" alt="home page link">Home</a></li>
+                  <li><a href="about.html" alt="about page link">About</a></li>
+                  <li><a href="howto.html" alt="how to use the website link">How-To</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="nav-mobile-btn">
+              <i class="fas fa-bars"></i>
+            </div>
+            <a href="./about.html" class="nav-links" alt="about page link">About</a>
+            <a href="./howto.html" class="nav-links" alt="how to use the website link">How-To</a>
           </div>
+          <div class="site-name"><a href="index.html" alt="home page link">Restaurant Passport</a></div>
           <div class="right-nav">
-            <a href="#">Login</a>
-            <a href="#">Sign.Up</a>
+            <a href="https://restaurant-passport-fe.netlify.com/login"><i class="fas fa-sign-in-alt"></i>Login</a>
+            <a href="https://restaurant-passport-fe.netlify.com/register"><i class="fas fa-user-plus"></i>Sign Up</a>
           </div>
         </nav>
       </header>
-      <main>
+        <main>
 
   <!-- CAROUSEL COMPONENT -->
   <div class="carousel">
@@ -49,7 +60,7 @@
         <h2>How to Page</h2>
         <div class='cta'>
           <a class='cta-text' href="./howtoall.html"> <button> How-To all steps click here</button></a>
-          <a class='cta-text' href="#"> <button> Or click the left or right arrows bellow </button></a>
+          <a class='cta-text' href="#"> <button> Or click the left or right arrows below </button></a>
           </div>
         </div>
       
@@ -92,22 +103,10 @@
                     <div class="right-button sbtn" data-btn="R">></div>
                   </section>
                 </main>
-  <footer class='header'>
-    <nav class="top-nav">
-      <div class="left-nav">
-        <a href="#">About</a>
-        <a href="./howto.html">How.To</a>
-      </div>
-      <div class="right-nav">
-        <a href="#">Login</a>
-        <a href="#">Sign.Up</a>
-      </div>
-    </nav>
-  
-    <p>copyright 2019</p>
-  </footer>
-</div>
-
+                <footer>
+                  <p>Restaurant Passport &copy; 2019</p>
+                </footer>
+            </div>
 </body>
 
 </html>
