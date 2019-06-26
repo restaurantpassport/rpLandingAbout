@@ -26,6 +26,7 @@ class Cardtrick {
   }
   vanishCard() {
     this.flipcard.style.display = "none";
+    resetButton.style.display = "inline-block";
   }
   titleText() {
     this.flipcard.title = "double click to make this card vanish";
@@ -41,10 +42,10 @@ cards.forEach((card) => {
 const resetButton = document.querySelector('.toggleMagic');
 
 resetButton.addEventListener('click', () => {
-
   cards.forEach((card) => {
     if (card.style.display === 'none') {
       card.style.display = "block";
     }
   });
+  resetButton.style.display = "none";
 })
