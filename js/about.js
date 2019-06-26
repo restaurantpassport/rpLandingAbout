@@ -11,3 +11,10 @@ cards.forEach((card) => {
     card.title = "double click to make this card vanish";
   })
 });
+
+cards.forEach((card) => {
+  card.addEventListener('touchstart', () => {
+    const cardRole = card.firstElementChild;
+    cardRole.style.transform = "rotateY(180deg)";
+  })
+});
