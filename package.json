@@ -2,7 +2,7 @@
   "name": "rpLandingAbout",
   "version": "1.0.0",
   "description": "Restaurant Passport Landing &amp; About Page",
-  "main": "howto.js",
+  "main": "gulpfile.js",
   "scripts": {
     "build": "gulp less",
     "test": "echo \"Error: no test specified\" && exit 1"
