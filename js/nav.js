@@ -1,12 +1,21 @@
-const mobileMenuBtn = document.querySelector('.nav-mobile-btn');
-const mobileMenu = document.querySelector('#mobile-nav-menu');
-
-mobileMenuBtn.addEventListener('touchstart', (e) => {
-  e.preventDefault();
-  openMenu();
-});
-mobileMenuBtn.addEventListener('click', openMenu);
-
-function openMenu(e) {
-  mobileMenu.classList.toggle('open');
+class NavBar {
+  constructor(element) {
+    this.element = element;
+    this.mobileBtn = element.querySelector('.nav-mobile-btn');
+    this.mobileMenu = element.querySelector('#mobile-nav-menu');
+  
+    this.mobileBtn.addEventListener('click', () => {
+      this.openMobileNav();
+    });
+    this.mobileBtn.addEventListener('touchstart', () => {
+      this.openMobileNav();
+    });
+  }
+  openMobileNav(e) {
+    this.mobileMenu.classList.toggle('open');
+  }
 }
+
+const topNav = document.querySelectorAll('.top-nav');
+
+topNav.forEach(navbar => new NavBar(navbar));
