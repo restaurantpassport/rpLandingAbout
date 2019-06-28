@@ -31,9 +31,15 @@ class Carousel {
 
       arr.forEach(function(thing,idx) {
         if(idx === current)
-        {imgs[idx].style = 'display: flex'}
+        {
+          imgs[idx].style = 'display: flex'
+          texts[idx].classList.remove('none');
+        }
         else
-        {imgs[idx].style = 'display: none'}
+        {
+          imgs[idx].style = 'display: none'
+          texts[idx].classList.add('none');
+        }
        })
 
     }
@@ -81,22 +87,21 @@ class Carousel {
 
 let btns = document.querySelectorAll('.xbtn');
 let imgs = document.querySelectorAll('.carousel img');
+let texts = document.querySelectorAll('.centered');
 Array.from(btns).forEach(one => new Carousel(one))
 
 for ( i = 0; i < (imgs.length - 1); i++)
- { imgs[i].style = 'display: none'}
+ { imgs[i].style = 'display: none'
+   texts[i].classList.add('none');
+
+}
 
   if (imgs.length > 0) 
-  {imgs[0].style = 'display: flex'}
+  {
+    imgs[0].style = 'display: flex'
+    texts[0].classList.remove('none');
+  }
 
-  imgs = document.querySelectorAll('.carousel img');
-  
-  for ( i = 0; i < (imgs.length - 1); i++)
-   { imgs[i].style = 'display: none'}
-  
-    if (imgs.length > 0) 
-    {imgs[0].style = 'display: flex'}
- 
   let sbtns = document.querySelectorAll('.sbtn');
   let spans = document.querySelectorAll('.steps span');
 
