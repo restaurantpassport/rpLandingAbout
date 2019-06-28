@@ -187,11 +187,7 @@
             }
           }
                     
-.steps {.stepboth(500px, scroll, 0);
-  @media @tiny{
-    height: 800px;} 
-  
-  }
+.steps {.stepboth(200px, scroll, 0);}
 .steps .step-text {.steptext();}
 .steps .step-text h2 {.steptexth2();}
 .steps .step-text h3 {.steptexth3();}
@@ -256,6 +252,7 @@ font-size: 8px;}
     flex-flow: column;
     align-items: center;
     margin: 0 12px 0 0;
+    height: 50px;
 }
 
 .cta-text button {
@@ -299,52 +296,56 @@ font-size: 8px;}
   }
   }
   }
-  .ws{
-    @media @medium{
-     position: relative;
-     bottom: 100px;
-     @media @phone{
-      position: relative;
-      bottom: 200px;
-                  }
- 
-    }
-     }
-   
-   .steps{
-    position: relative;
-    bottom: 200px;
-   @media @tablet{
-     position: relative;
-     bottom: 300px;
-     @media @phone{
-      position: relative;
-      bottom: 400px;
-      @media @tiny{
-        position: relative;
-        bottom: 500px;
-      }
-  
-    }
- 
-    }
-   }
+.ws{
+  height: 140px;
+}
 
-   .hfooter{
-    position: relative;
-    bottom: 200px;
-   @media @tablet{
-     position: relative;
-     bottom: 300px;
-     @media @phone{
-      position: relative;
-      bottom: 500px;
-      @media @tiny{
-        position: relative;
-        bottom: 700px;
-      }
-  
-    }
+  // .ws{
+  //   @media @medium{
+  //    position: relative;
+  //    bottom: 100px;
+  //    @media @phone{
+  //     position: relative;
+  //     bottom: 200px;
+  //                 }
  
-    }
-   }
+  //   }
+  //    }
+   
+  //  .steps{
+  //   position: relative;
+  //   bottom: 200px;
+  //  @media @tablet{
+  //    position: relative;
+  //    bottom: 300px;
+  //    @media @phone{
+  //     position: relative;
+  //     bottom: 400px;
+  //     @media @tiny{
+  //       position: relative;
+  //       bottom: 500px;
+  //     }
+  
+  //   }
+ 
+  //   }
+  //  }
+
+  //  .hfooter{
+  //   position: relative;
+  //   bottom: 200px;
+  //  @media @tablet{
+  //    position: relative;
+  //    bottom: 300px;
+  //    @media @phone{
+  //     position: relative;
+  //     bottom: 500px;
+  //     @media @tiny{
+  //       position: relative;
+  //       bottom: 700px;
+  //     }
+  
+  //   }
+ 
+  //   }
+  //  }
