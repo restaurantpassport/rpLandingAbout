@@ -215,14 +215,20 @@
 font-size: 8px;}
 }
 
-.carousel {.stepboth(100%, hidden, 0);
+.carousel {.stepboth(500px, hidden, 0);
 width: 100%;
+@media @medium{
+  height: 100%;
+  width: 100%;
+  }
 @media @tablet{
-  width: 80%;
+  height: 100%;
+  width: 100%;
   }
   @media @phone{
-    width: 70%;
-    }
+    height: 100%;
+    width: 100%;
+      }
       
 }
 
