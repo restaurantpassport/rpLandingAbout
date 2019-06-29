@@ -83,6 +83,11 @@
       width: 50px;
       height: 50px;
       cursor: pointer;
+      @media @phone{
+        width: 20px;
+        height: 20px;
+        }
+      
     }
     .left-button {
       top: 50%; 
@@ -187,7 +192,9 @@
             }
           }
                     
-.steps {.stepboth(200px, scroll, 0);}
+.steps {.stepboth(200px, scroll, 0);
+
+}
 .steps .step-text {.steptext();}
 .steps .step-text h2 {.steptexth2();}
 .steps .step-text h3 {.steptexth3();}
@@ -208,7 +215,16 @@
 font-size: 8px;}
 }
 
-.carousel {.stepboth(500px, hidden, 0);}
+.carousel {.stepboth(100%, hidden, 0);
+width: 100%;
+@media @tablet{
+  width: 80%;
+  }
+  @media @phone{
+    width: 70%;
+    }
+      
+}
 
   .cta {
     display: flex;
@@ -288,9 +304,9 @@ font-size: 8px;}
     font-size: 48px;
     
   @media @phone{
-    font-size: 26px;
+    font-size: 20px;
     @media @tiny{
-      font-size: 16px;
+      font-size: 10px;
       }
     
   }
@@ -302,7 +318,13 @@ font-size: 8px;}
 }
 
 .xbtn, .sbtn, button {
-
+  @media @phone{
+    font-size: 20px !important;
+    }
+    @media @tiny{
+      font-size: 10px !important;
+      }
+      
   animation: pulse 5s infinite;
 }
 @keyframes pulse {
@@ -312,12 +334,17 @@ font-size: 8px;}
   100% {
     background-color: white;
   }
+  
 }
 
 .how-button {
   width: 300px !important;
   @media @tablet{
    width: 200px !important;    
+}
+@media @tiny{
+  width: 100px !important;
+  // font-size: 5px;
   }
 }
 .scroll-see {
